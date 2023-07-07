@@ -100,21 +100,26 @@ nav ul li a{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
+    
+  }  
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-weight: 600;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: transparent;}
+  .dropdown-content a:hover {
+    background-color: transparent; 
+  }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #00000000;}
@@ -136,17 +141,25 @@ nav ul li a{
 
 /*----------------------services---------------------- */
 
-.container-service{
+.service #service-title{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+
+.container-service {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 100px 50px;
-  padding: 100px 50px;
+  padding: 50px 50px;
 }
 
-.container-service .card{
+.container-service .card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -157,15 +170,16 @@ nav ul li a{
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.container-service .card:hover{
-  height: 400px;
+.container-service .card:hover {
+  height: 300px;
 }
 
-.container-service .card .imgBx{
+.container-service .card .imgBx {
   position: absolute;
-  top:20px;
+  top: 20px;
   width: 300px;
   height: 220px;
   background: #333;
@@ -174,13 +188,13 @@ nav ul li a{
   transition: 0.3s;
 }
 
-.container-service .card:hover .imgBx{
+.container-service .card:hover .imgBx {
   top: -100px;
   scale: 0.75s;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
-.container-service .card .imgBx img{
+.container-service .card .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -189,8 +203,7 @@ nav ul li a{
   object-fit: cover;
 }
 
-
-.container-service .card .content{
+.container-service .card .content {
   position: absolute;
   top: 252px;
   width: 100%;
@@ -201,25 +214,25 @@ nav ul li a{
   transition: 0.5s;
 }
 
-.container .card:hover .content{
+.container-service .card:hover .content {
   top: 130px;
-  height: 250px;
+  height: 150px;
 }
 
-.container-service .card .content h2{
+.container-service .card .content h2 {
   font-size: 1.5em;
   font-weight: 700;
-  color: var(color);
+  color: var(--color);
 }
 
-.container-service .card .content a{
+.container-service .card .content a {
   position: relative;
-  top: 15px;
+  top: 10px;
   display: inline-block;
-  padding: 12px 2px;
-  background: navy;
+  padding: 12px 25px;
+  background: rgb(255, 96, 96);
   color: rgb(255, 255, 255);
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 5px;
 }
