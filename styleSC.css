@@ -41,7 +41,7 @@ body {
     width: 100%;
     height: 100vh;
     /* background: linear-gradient(rgba(66, 66, 66, 0.419), rgba(0, 0, 0, 0.173)), url(images/bg1.jpg) no-repeat; */
-    background:url(images/bg1.png);
+    background:url(images/bg4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +96,8 @@ nav ul li a{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:lightgray;
+    background-color: rgba(0, 0, 0, 0.316); /* Replace with your desired background color */
+    backdrop-filter: blur(5px); /* Adjust the blur value as needed */
     border-radius: 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -105,7 +106,7 @@ nav ul li a{
   }  
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -155,18 +156,33 @@ nav ul li a{
   }
 
 .header-text{
-    text-align: center;
-    margin-top: 20%;
+  text-align: left;
+    font-size: 20px;
+    margin-top: 12%;
     color: rgb(0, 0, 0);
 }
 
 .header-text h1{
-    font-size: 40px;
+  text-align: left;
+    font-size: 50px;
 }
 
+.header-text .btn{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  color: #ffffff;
+  display: block;
+  width: fit-content;
+  border: 1px solid #ffffff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+  background: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );;
+}
 
-.header-text h2{
-    margin: 20px;
+.header-text .btn:hover{
+  background: #000000;
 }
 
 /*----------------------services---------------------- */
