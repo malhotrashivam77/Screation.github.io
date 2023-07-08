@@ -50,7 +50,7 @@ body {
 
 .logo{
     margin-top: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 94, 255);
     font-size: 40px;
     font-weight: 300;
     }
@@ -176,6 +176,7 @@ nav ul li a{
   width: fit-content;
   border: 1px solid #ffffff;
   padding: 10px 25px;
+  text-decoration: inherit;
   border-radius: 10px;
   transition: 0.3s;
   background: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );;
@@ -188,7 +189,7 @@ nav ul li a{
 /*----------------------services---------------------- */
 
 .service{
-  background-color: rgba(0, 0, 0, 0.133);
+  background-color: rgb(255, 255, 255);
 }
 
 .service #service-title{
@@ -217,7 +218,7 @@ nav ul li a{
   align-items: flex-start;
   width: 335px;
   height: 300px;
-  background: linear-gradient(to right, #5b585862, #ffffff1f);
+  background: linear-gradient(to right, #33001b, #ff0084);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
@@ -490,3 +491,93 @@ label:hover{
 
 
 
+.contactheading{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4800ff;
+}
+
+
+.contact-left{
+  flex-basis: 5%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+}
+
+.contact-left p i{
+  color: #4800ff;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact-left p a{
+  color: #000000;
+}
+
+
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #000000;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a .linkedin{
+  color: #4800ff;
+}
+
+.social-icons a:hover{
+  color: #4800ff;
+  transform: translateY(-5px);
+}
+
+.contact-right .btn.btn2{
+  display: inline-block;
+  background: #4800ff;
+  color: #fff;
+}
+
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #e7e5e5;
+  padding: 10px;
+  margin: 15px 0;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+
+form btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #e2dddd;
+  font-weight: 300;
+}
